@@ -11,6 +11,15 @@ ansible_user=root
 ns1.toyouto.me
 ns3.toyouto.me
 
+[postgresdb]
+10.250.40.20
+
+[extensibleapp]
+10.250.40.11
+
+[extensiblesc]
+10.250.40.14
+
 [nameservers:vars]
 ansible_user=snow
 become=yes
