@@ -1,0 +1,4 @@
+- name: Remove local tarball
+  file:
+    path: "{{ rm_files }}" 
+    state: absent

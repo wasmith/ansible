@@ -1,0 +1,4 @@
+- name: Install required packages for dumping SQL databases 
+  apt:
+    pkg:
+      - python-mysqldb

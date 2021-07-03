@@ -1,0 +1,5 @@
+- name: Backup Databases
+  community.mysql.mysql_db:
+    state: dump
+    name: "{{ dbs_to_dump }}"
+    target: "{{ db_dump_path }}"

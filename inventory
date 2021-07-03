@@ -1,0 +1,17 @@
+[proxies]
+10.250.40.10
+
+[sgfe_wordpress_prod]
+10.250.40.52
+
+[sgfe_wordpress_prod:vars]
+ansible_user=root
+
+[nameservers]
+ns1.toyouto.me
+ns3.toyouto.me
+
+[nameservers:vars]
+ansible_user=snow
+become=yes
+become_user=root

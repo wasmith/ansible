@@ -1,0 +1,9 @@
+- name: Upload tarball to S3
+  amazon.aws.aws_s3:
+    bucket: "{{ s3_bucket }}"
+    aws_access_key: "{{ s3_access_key }}"
+    aws_secret_key: "{{ s3_secret_key }}"
+    object: "{{ s3_dest_path }}"
+    src: "{{ backup_path }}"
+    mode: put
+

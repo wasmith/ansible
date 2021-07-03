@@ -1,0 +1,5 @@
+- name: Create tarball
+  archive:
+    path: "{{ backup_items }}"
+    dest: "{{ backup_path }}"      
+    format: "{{ backup_format }}"

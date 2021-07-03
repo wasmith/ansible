@@ -1,0 +1,13 @@
+- name: Install required packages from apt
+  apt:
+     name:
+       - python-pip
+       - awscli
+
+- name: Install required pip packages
+  pip:
+    name:
+      - boto
+      - boto3
+      - botocore
+
