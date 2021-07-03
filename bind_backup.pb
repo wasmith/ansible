@@ -10,7 +10,6 @@
       - /var/lib/bind
     backup_path: /tmp/bind_backup.tar.bz2
     backup_format: bz2
-    dbs_to_dump: all
   gather_facts: yes
 
   tasks:
